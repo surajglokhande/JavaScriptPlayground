@@ -8,17 +8,6 @@ function restDemo(num1, num2, ...restParam) {
 
 //restDemo(10,20,30,40);
 
-//spread operator
-
-function spreadDemo(num1, num2, num3, num4, num5) {
-    console.log(num1, num2, num3, num4, num5);
-}
-
-const array = [10, 20, 30, 40, 50];
-//spreadDemo(array[0],array[1],array[2]);
-//spreadDemo(...array);
-//console.log(newArray = [...array, 60])
-
 //rest with object
 
 const student = {
@@ -32,6 +21,17 @@ const { age, name, ...other } = student;
 const obj = student
 // console.log(obj.name, obj.age, other);
 // console.log(name, age, { ...other })
+
+//spread operator
+
+function spreadDemo(num1, num2, num3, num4, num5) {
+    console.log(num1, num2, num3, num4, num5);
+}
+
+const array = [10, 20, 30, 40, 50];
+//spreadDemo(array[0],array[1],array[2]);
+//spreadDemo(...array);
+//console.log(newArray = [...array, 60])
 
 //spread with object to override
 
